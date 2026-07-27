@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="it"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noarchive"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><title>Diritti d’autore e avvertenze | it.CedricVillani.com</title><link rel="icon" href="/images/icon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/images/icon-180.png"><link rel="canonical" href="https://it.cedricvillani.com/diritti-d-autore-e-avvertenze/"><link rel="alternate" hreflang="en" href="https://www.cedricvillani.com/copyright-and-disclaimer/"><link rel="alternate" hreflang="fr" href="https://www.cedricvillani.fr/droits-d-auteur-et-avertissement/"><link rel="alternate" hreflang="zh-cn" href="https://zh.cedricvillani.com/banquan-yu-mianze-shengming/"><link rel="alternate" hreflang="x-default" href="https://www.cedricvillani.com/copyright-and-disclaimer/"><meta property="og:site_name" content="it.CedricVillani.com"><meta property="og:title" content="Diritti d’autore e avvertenze | it.CedricVillani.com"><meta property="og:type" content="website"><meta property="og:url" content="https://it.cedricvillani.com/diritti-d-autore-e-avvertenze/"><meta property="og:locale" content="it"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Diritti d’autore e avvertenze | it.CedricVillani.com"><script>
+      (function () {
+        var pref = localStorage.getItem("theme") || "auto";
+        var resolved = pref === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : pref;
+        document.documentElement.setAttribute("data-theme", resolved);
+      })();
+    </script><link rel="stylesheet" href="/_astro/Base.DL9meBB_.css">
+<link rel="stylesheet" href="/_astro/_..BgH5Jut5.css"></head> <body> <nav class="nav"> <div class="nav-inner">  <div class="nav-row-1"> <a href="/" class="nav-brand">it.CedricVillani.com</a> <button class="nav-hamburger" type="button" aria-expanded="false" aria-label="Menu"> <span class="hamburger-label">Menu &rarr;</span> <span class="hamburger-icon"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </span> </button> <div class="nav-controls"> <div class="theme-toggle" role="group" aria-label="Theme"> <button type="button" data-theme-set="light">Chiaro</button> <button type="button" data-theme-set="dark">Scuro</button> <button type="button" data-theme-set="auto">Automatico</button> </div> <script>
+(function () {
+  function getSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(pref) {
+    var resolved = pref === "auto" ? getSystemTheme() : pref;
+    document.documentElement.setAttribute("data-theme", resolved);
+
+    document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-theme-set") === pref);
+    });
+  }
+
+  var stored = localStorage.getItem("theme") || "auto";
+  applyTheme(stored);
+
+  document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var pref = btn.getAttribute("data-theme-set");
+      localStorage.setItem("theme", pref);
+      applyTheme(pref);
+    });
+  });
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+    if ((localStorage.getItem("theme") || "auto") === "auto") {
+      applyTheme("auto");
+    }
+  });
+})();
+</script> <div class="lang-switcher"> <button type="button" class="lang-switcher-btn" aria-expanded="false"> Italiano </button> <div class="lang-dropdown"> <a href="https://www.cedricvillani.com/copyright-and-disclaimer/"> English </a><a href="https://www.cedricvillani.fr/droits-d-auteur-et-avertissement/"> Français </a><a href="https://it.cedricvillani.com/diritti-d-autore-e-avvertenze/" class="current"> Italiano </a><a href="https://zh.cedricvillani.com/banquan-yu-mianze-shengming/"> 简体中文 </a> </div> </div> </div> </div> <ul class="nav-links"> <li><a href="/lettere-aperte-e-cronologia-degli-eventi/">Cronologia e Lettere Aperte</a></li><li><a href="/cia-e-coinvolgimento-di-servizi-di-intelligence-stranieri/">CIA e Intelligence Straniera</a></li><li><a href="/rischi-di-tortura-e-pena-di-morte-in-cina/">Rischi di Pena di Morte in Cina</a></li><li><a href="/procedimenti-giudiziari-in-corso/">Procedimenti Giudiziari</a></li><li><a href="/analisi-di-intelligenza-artificiale-che-confermano-i-crimini-di-mcdonalds/">Analisi tramite IA</a></li> </ul> </div> </nav> <script>
+(function () {
+  // Hamburger toggle
+  var hamburger = document.querySelector(".nav-hamburger");
+  var navLinks = document.querySelector(".nav-links");
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", function () {
+      var expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", String(!expanded));
+      navLinks.classList.toggle("open");
+    });
+  }
+
+  // Language switcher dropdown
+  var langBtn = document.querySelector(".lang-switcher-btn");
+  var langDropdown = document.querySelector(".lang-dropdown");
+  if (langBtn && langDropdown) {
+    langBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var expanded = langBtn.getAttribute("aria-expanded") === "true";
+      langBtn.setAttribute("aria-expanded", String(!expanded));
+      langDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+      langBtn.setAttribute("aria-expanded", "false");
+      langDropdown.classList.remove("open");
+    });
+  }
+})();
+</script> <main> <div class="page-container" data-astro-cid-iwstzw75> <h1 data-astro-cid-iwstzw75>Diritti d’autore e avvertenze</h1> <div class="content prose" data-astro-cid-iwstzw75><h2>Sull&#39;autore di questo sito</h2>
+<p>Se desiderate saperne di più su chi sono, vi prego di visitare <a href="https://www.VincentLeCorre.org">VincentLeCorre.org</a>.</p>
+<h2>Come viene utilizzata l&#39;intelligenza artificiale su questo sito</h2>
+<p>Desidero essere trasparente su questo punto, perché avete il diritto di sapere come sono state prodotte le pagine che state leggendo.</p>
+<p>Mi avvalgo dell&#39;assistenza dell&#39;IA per costruire e mantenere questo sito: organizzare e verificare in modo incrociato un grande volume di documenti, mantenere la banca dati da cui queste pagine vengono generate, tradurre le pagine tra inglese, francese, italiano e cinese, e redigere i testi esplicativi che accompagnano le prove.</p>
+<p><strong>Ciò per cui l&#39;IA non viene utilizzata: le prove stesse.</strong> Le email, le lettere, le risposte, le convocazioni e i documenti ufficiali qui riprodotti sono i documenti originali, pubblicati così come sono. Non vengono scritti, riscritti, parafrasati né «migliorati» da un&#39;IA. Quando cito un documento, lo cito tale e quale. Quando mi baso sui miei ricordi anziché su un documento, mi sforzo di dirlo chiaramente.</p>
+<p><strong>L&#39;IA può sbagliare.</strong> Può leggere male una data, tradurre in modo errato un&#39;espressione, non cogliere la sfumatura di un termine giuridico, oppure affermare qualcosa con più sicurezza di quanta il documento sottostante ne consenta davvero. Questo rischio è reale e preferisco dichiararlo piuttosto che nasconderlo dietro una presentazione curata. Cerco di essere il più scrupoloso e il più accurato possibile: verifico quanto pubblicato rispetto ai documenti originali, preferisco scrivere «non lo so» o «non ricordo» piuttosto che colmare una lacuna con un&#39;ipotesi semplicemente verosimile, e correggo gli errori non appena li individuo o mi vengono segnalati.</p>
+<p>Se ritenete che un&#39;informazione di questo sito sia inesatta, vi prego di segnalarmelo. Preferisco di gran lunga essere corretto che restare pubblicamente nell&#39;errore.</p>
+</div> </div> </main> <footer class="footer"> <div class="footer-links">  <a href="/">Home</a> <span class="footer-sep"> | </span> <a href="/about/">Chi siamo</a> <span class="footer-sep"> | </span> <a href="/diritti-d-autore-e-avvertenze/">Diritti d&#39;autore e avvertenze</a> <span class="footer-sep"> | </span> <a href="/other-websites/">Altri siti web</a> <span class="footer-sep"> | </span> <a href="/relevant-laws-and-regulations/">Leggi</a> <span class="footer-sep"> | </span> <a href="/timeline-of-events-and-open-letters/latest-crime-report-criminal-rico-case-targeting-mcdonalds/">Bozza di denuncia penale</a> <span class="footer-sep"> | </span> <a href="/list-of-evidence/">Prove</a> <span class="footer-sep"> | </span> <a href="/detailed-timeline-of-events-and-open-letters/">Cronologia dettagliata</a> <span class="footer-sep"> | </span> <a href="/errata-corrige/">Errata Corrige</a>  </div> <div class="footer-org">European Court of Human Rights Watch</div> <div>&copy; 2021-2026 <a href="https://www.linkedin.com/in/x-v-france/">Vincent Le Corre</a></div> </footer> </body></html>
