@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="it"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noarchive"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><title>ECTHRwatch.org</title><link rel="canonical" href="https://it.ecthrwatch.org/"><link rel="alternate" hreflang="en" href="https://www.ecthrwatch.org/"><link rel="alternate" hreflang="fr" href="https://fr.ecthrwatch.org/"><link rel="alternate" hreflang="zh-cn" href="https://zh.ecthrwatch.org/"><link rel="alternate" hreflang="x-default" href="https://www.ecthrwatch.org/"><meta property="og:site_name" content="ECTHRwatch.org"><meta property="og:title" content="ECTHRwatch.org"><meta property="og:type" content="website"><meta property="og:url" content="https://it.ecthrwatch.org/"><meta property="og:locale" content="it"><meta property="og:image" content="https://it.ecthrwatch.org/images/ECTHRwatch_square.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ECTHRwatch.org"><meta name="twitter:image" content="https://it.ecthrwatch.org/images/ECTHRwatch_square.jpg"><script>
+      (function () {
+        var pref = localStorage.getItem("theme") || "auto";
+        var resolved = pref === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : pref;
+        document.documentElement.setAttribute("data-theme", resolved);
+      })();
+    </script><style>.home-container[data-astro-cid-j7pv25f6]{max-width:56rem;margin:3rem auto;padding:2rem 1.5rem;background-color:var(--color-content-bg);border-radius:.25rem}.about-header[data-astro-cid-j7pv25f6]{display:flex;align-items:flex-start;gap:2rem;margin-bottom:2rem}.about-avatar[data-astro-cid-j7pv25f6]{flex-shrink:0;width:180px}.avatar-img[data-astro-cid-j7pv25f6]{width:100%;border-radius:50%;display:block}.about-info[data-astro-cid-j7pv25f6]{flex:1}.about-info[data-astro-cid-j7pv25f6] h1[data-astro-cid-j7pv25f6]{font-size:1.8rem;margin-bottom:.75rem;line-height:1.3}.about-divider[data-astro-cid-j7pv25f6]{width:25%;border-bottom:1px solid var(--color-nav-border);margin-bottom:1rem}.about-role[data-astro-cid-j7pv25f6]{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin-bottom:1.5rem;font-size:.95rem}.about-bio[data-astro-cid-j7pv25f6]{font-size:1.05rem;line-height:1.7}.about-social[data-astro-cid-j7pv25f6]{display:flex;flex-direction:column;gap:.5rem;flex-shrink:0}.social-icon[data-astro-cid-j7pv25f6]{display:flex;align-items:center;justify-content:center;width:32px;height:32px;font-size:1rem;text-decoration:none;color:var(--color-text);opacity:.7;transition:opacity .2s}.social-icon[data-astro-cid-j7pv25f6]:hover{opacity:1;text-decoration:none}.exec-summary[data-astro-cid-j7pv25f6]{margin-top:1rem}.portrait-section[data-astro-cid-j7pv25f6]{text-align:center;margin:1.5rem 0}.portrait-img[data-astro-cid-j7pv25f6]{width:128px;height:auto;border-radius:50%;display:inline-block}.contact-links[data-astro-cid-j7pv25f6]{text-align:center;margin-bottom:2rem;line-height:1.8}.banner-section[data-astro-cid-j7pv25f6]{width:100%}.banner-bg[data-astro-cid-j7pv25f6]{width:100%;height:120px;background-size:contain;background-repeat:repeat-x;background-position:center}@media(max-width:768px){.about-header[data-astro-cid-j7pv25f6]{flex-direction:column;align-items:center;text-align:center}.about-avatar[data-astro-cid-j7pv25f6]{width:140px}.about-role[data-astro-cid-j7pv25f6]{justify-content:center}.about-divider[data-astro-cid-j7pv25f6]{margin-left:auto;margin-right:auto}.about-social[data-astro-cid-j7pv25f6]{flex-direction:row}}
+</style>
+<link rel="stylesheet" href="/_astro/Base.DL9meBB_.css"></head> <body> <nav class="nav"> <div class="nav-inner">  <div class="nav-row-1"> <a href="/" class="nav-brand">ECTHRwatch.org</a> <button class="nav-hamburger" type="button" aria-expanded="false" aria-label="Menu"> <span class="hamburger-label">Menu &rarr;</span> <span class="hamburger-icon"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </span> </button> <div class="nav-controls"> <div class="theme-toggle" role="group" aria-label="Theme"> <button type="button" data-theme-set="light">Chiaro</button> <button type="button" data-theme-set="dark">Scuro</button> <button type="button" data-theme-set="auto">Automatico</button> </div> <script>
+(function () {
+  function getSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(pref) {
+    var resolved = pref === "auto" ? getSystemTheme() : pref;
+    document.documentElement.setAttribute("data-theme", resolved);
+
+    document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-theme-set") === pref);
+    });
+  }
+
+  var stored = localStorage.getItem("theme") || "auto";
+  applyTheme(stored);
+
+  document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var pref = btn.getAttribute("data-theme-set");
+      localStorage.setItem("theme", pref);
+      applyTheme(pref);
+    });
+  });
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+    if ((localStorage.getItem("theme") || "auto") === "auto") {
+      applyTheme("auto");
+    }
+  });
+})();
+</script> <div class="lang-switcher"> <button type="button" class="lang-switcher-btn" aria-expanded="false"> Italiano </button> <div class="lang-dropdown"> <a href="https://www.ecthrwatch.org/"> English </a><a href="https://fr.ecthrwatch.org/"> Français </a><a href="https://it.ecthrwatch.org/" class="current"> Italiano </a><a href="https://zh.ecthrwatch.org/"> 简体中文 </a> </div> </div> </div> </div> <ul class="nav-links"> <li><a href="/cronologia-degli-eventi-e-lettere-aperte/">Cronologia e Lettere Aperte</a></li><li><a href="/cia-e-coinvolgimento-di-servizi-di-intelligence-stranieri/">CIA e Intelligence Straniera</a></li><li><a href="/rischi-di-tortura-e-pena-di-morte-in-cina/">Rischi di Pena di Morte in Cina</a></li><li><a href="/procedimenti-giudiziari-in-corso/">Procedimenti Giudiziari</a></li><li><a href="/analisi-di-intelligenza-artificiale-che-confermano-i-crimini-di-mcdonalds/">Analisi tramite IA</a></li> </ul> </div> </nav> <script>
+(function () {
+  // Hamburger toggle
+  var hamburger = document.querySelector(".nav-hamburger");
+  var navLinks = document.querySelector(".nav-links");
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", function () {
+      var expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", String(!expanded));
+      navLinks.classList.toggle("open");
+    });
+  }
+
+  // Language switcher dropdown
+  var langBtn = document.querySelector(".lang-switcher-btn");
+  var langDropdown = document.querySelector(".lang-dropdown");
+  if (langBtn && langDropdown) {
+    langBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var expanded = langBtn.getAttribute("aria-expanded") === "true";
+      langBtn.setAttribute("aria-expanded", String(!expanded));
+      langDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+      langBtn.setAttribute("aria-expanded", "false");
+      langDropdown.classList.remove("open");
+    });
+  }
+})();
+</script> <main>  <div class="home-container" data-astro-cid-j7pv25f6> <!-- About Section --> <div class="about-section" data-astro-cid-j7pv25f6> <div class="about-header" data-astro-cid-j7pv25f6> <div class="about-avatar" data-astro-cid-j7pv25f6> <img src="/images/ECTHRwatch_square.jpg" alt="Avatar" class="avatar-img" data-astro-cid-j7pv25f6> </div> <div class="about-info" data-astro-cid-j7pv25f6> <h1 data-astro-cid-j7pv25f6>European Court of Human Rights Watch</h1> <div class="about-divider" data-astro-cid-j7pv25f6></div> <div class="about-role" data-astro-cid-j7pv25f6> <span data-astro-cid-j7pv25f6>Key Witness • Analyst • Whistleblower</span> <a href="https://www.linkedin.com/in/x-v-france/" data-astro-cid-j7pv25f6>Vincent Le Corre</a> </div>  </div> <div class="about-social" data-astro-cid-j7pv25f6> <a href="mailto:vincent@ecthrwatch.org" title="Email" class="social-icon" data-astro-cid-j7pv25f6> ✉    </a><a href="https://www.linkedin.com/in/x-v-france" title="LinkedIn" class="social-icon" data-astro-cid-j7pv25f6>  in   </a><a href="https://twitter.com/ECtHRwatch" title="Twitter" class="social-icon" data-astro-cid-j7pv25f6>   𝓍  </a><a href="https://github.com/ecthrwatch" title="GitHub" class="social-icon" data-astro-cid-j7pv25f6>    ⬡ </a> </div> </div> <!-- Executive Summary -->  <div class="exec-summary prose" data-astro-cid-j7pv25f6><div style="text-align: center; font-size: 1.6em; font-weight: bold; margin-top: 1.5em; margin-bottom: 1em;">
+Sintesi esecutiva<br>
+<span style="font-size: 0.85em; font-weight: normal;">(meno di 2 minuti di lettura)</span>
+</div>
+<div style="font-size: 1.1em; line-height: 1.5;"><p><strong>I crimini</strong><br>McDonald&#39;s ha organizzato giochi promozionali su scala globale, presentandoli falsamente come giochi di sorte equi. In realtà, la società ha ripetutamente travisato le probabilità di vincita, arrivando a falsificarle apertamente. Non si è trattato di semplice marketing ingannevole, ma di una frode calcolata di estrema gravità.</p>
+<p>Questi metodi di stampo mafioso costituiscono frode di massa ai consumatori e riciclaggio di denaro. Rientrano inoltre nell&#39;ambito di applicazione della <strong>Convenzione delle Nazioni Unite contro la criminalità organizzata transnazionale (Convenzione di Palermo)</strong>, in particolare dell&#39;<strong>articolo 5</strong>, che incrimina la partecipazione a un gruppo criminale organizzato e i reati gravi commessi intenzionalmente in ambito transnazionale.</p>
+<p><strong>L&#39;entità dei crimini</strong><br>Per oltre tre decenni, McDonald&#39;s ha ingannato miliardi di persone in decine di paesi. L&#39;impatto economico complessivo include la perdita di una legittima possibilità di vincere premi, la manipolazione del mercato e un vantaggio competitivo sleale. Nel complesso, il valore degli interessi lesi raggiunge probabilmente le migliaia di miliardi di dollari. Decine di migliaia di franchisee, sebbene giuridicamente distinti, hanno contribuito ad attuare questi schemi. Molti potranno invocare l&#39;ignoranza, ma la loro condotta rivela spesso una negligenza criminale. Se la legge fosse correttamente applicata, McDonald&#39;s e i suoi franchisee verrebbero dichiarati falliti e perseguiti penalmente.</p>
+<p><strong>Il silenzio colpevole della Francia, l&#39;intelligence statunitense entra in scena</strong><br>In Francia, atti giudiziari sono stati falsificati in più occasioni. McDonald&#39;s sembra aver beneficiato di una protezione interna che ha coinvolto alti funzionari, magistrati (procuratori e giudici), e parlamentari che hanno mancato al loro dovere costituzionale di controllo parlamentare. Tale protezione potrebbe essere arrivata fino a ministri, primi ministri, e forse persino al presidente della Repubblica Emmanuel Macron. Se confermato, ciò costituirebbe una grave crisi costituzionale.</p>
+<p>In Cina, dove attualmente risiedo, sono stato contattato da persone con cui ero già in contatto. In precedenza mi avevano proposto di lavorare per loro, senza rivelarmi chi fossero realmente. Solo dopo aver riconosciuto la gravità dei crimini di McDonald&#39;s si sono identificati come agenti della comunità di intelligence statunitense. Una volta rivelata la loro vera identità, hanno rinnovato la proposta di lavorare con loro.</p>
+<p><strong>Coesistenza pacifica tra le nazioni, sotto lo sguardo di Dio</strong><br>Amo profondamente sia la Cina sia gli Stati Uniti. Ma amo ancora di più mia moglie e i miei suoceri. Mio suocero è un funzionario in pensione del Partito Comunista Cinese. Accettare un&#39;offerta dei servizi di intelligence militare statunitense avrebbe messo la mia famiglia in grave pericolo. Vivo ormai sotto la costante minaccia di ritorsioni, non solo da parte delle autorità cinesi, ma anche da parte della Francia e degli Stati Uniti.<br>L&#39;unica via che posso seguire in piena <em><strong>coscienza</strong></em> è vivere secondo la mia <em>fede</em>, rispondere a Dio anziché ai governi, e rimanere fedele alla verità, alla giustizia, e all&#39;ideale della coesistenza pacifica tra le nazioni, come dovere morale dinanzi a Dio.</p>
+<div style="text-align: center; font-style: italic;">
+"Ma scorra il diritto come acqua, e la giustizia come torrente che non si prosciuga mai."<br>
+Amos 5:24
+</div><p>Anche quando i tribunali tacciono, quando le istituzioni crollano, e quando i potenti abusano della loro posizione, la giustizia divina non dorme.<br>Essa avanza. Implacabile. Purificatrice. Inarrestabile.<br>Un noto proverbio cinese esprime questa stessa forza irresistibile:</p>
+<div style="text-align: center;">
+<span style="font-weight: bold;">&laquo; 长江黄河不会倒流 &raquo;</span><br>
+<span style="font-style: italic;">"Lo Yangtze e il Fiume Giallo non scorreranno mai all'indietro."</span>
+</div><p>Ci ricorda che alcune forze sono irreversibili, così come la volontà del nostro Creatore avanza, infallibile e irresistibile.<br>La giustizia divina non esita. Squarcia le tenebre, purifica la corruzione, e <em>sempre</em> prevale.</p>
+<p>E così come lo Yangtze e il Fiume Giallo seguono sempre il loro corso fino alla fine, anch&#39;io seguirò questa via stretta verso l&#39;unica vera vittoria: quella che ristabilisce la giustizia, porta la pace, e compie la volontà del Cielo.</p>
+</div><div style="text-align: center; font-size: 1.25em; line-height: 1.6; letter-spacing: 0.04em;">
+Vincent Le Corre<br>
+&#38470;&#22307;&#20052; (Lu Shengqiao)<br>
+Beijing, China
+</div></div> <!-- Portrait + contact --> <div class="portrait-section" data-astro-cid-j7pv25f6> <a href="https://www.linkedin.com/in/x-v-france/" data-astro-cid-j7pv25f6> <img src="/images/vlc_portrait.jpeg" alt="Vincent" class="portrait-img" data-astro-cid-j7pv25f6> </a> </div> <p class="contact-links" data-astro-cid-j7pv25f6> <a href="https://www.linkedin.com/in/x-v-france" data-astro-cid-j7pv25f6>Clicca qui per seguirmi su LinkedIn</a><br data-astro-cid-j7pv25f6> Puoi anche inviarmi un&#39;email a questo indirizzo: <a href="mailto:vincent@ecthrwatch.org" data-astro-cid-j7pv25f6>vincent@ecthrwatch.org</a> </p> </div> </div>  <div class="banner-section" data-astro-cid-j7pv25f6> <div class="banner-bg" style="background-image: url(/images/logos/ecthrwatch_banner_mcdonalds_227w_112h.jpg);" data-astro-cid-j7pv25f6></div> </div>  </main> <footer class="footer"> <div class="footer-links">  <a href="/">Home</a> <span class="footer-sep"> | </span> <a href="/about/">Chi siamo</a> <span class="footer-sep"> | </span> <a href="/other-websites/">Altri siti web</a> <span class="footer-sep"> | </span> <a href="/relevant-laws-and-regulations/">Leggi</a> <span class="footer-sep"> | </span> <a href="/timeline-of-events-and-open-letters/latest-crime-report-criminal-rico-case-targeting-mcdonalds/">Bozza di denuncia penale</a> <span class="footer-sep"> | </span> <a href="/list-of-evidence/">Prove</a> <span class="footer-sep"> | </span> <a href="/detailed-timeline-of-events-and-open-letters/">Cronologia dettagliata</a> <span class="footer-sep"> | </span> <a href="/errata-corrige/">Errata Corrige</a>  </div> <div class="footer-org">European Court of Human Rights Watch</div> <div>&copy; 2021-2026 <a href="https://www.linkedin.com/in/x-v-france/">Vincent Le Corre</a></div> </footer> </body></html>

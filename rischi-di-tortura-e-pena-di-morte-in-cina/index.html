@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="it"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noarchive"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet"><title>Rischi di tortura e pena di morte in Cina | ECTHRwatch.org</title><link rel="canonical" href="https://it.ecthrwatch.org/rischi-di-tortura-e-pena-di-morte-in-cina/"><link rel="alternate" hreflang="en" href="https://www.ecthrwatch.org/torture-and-death-penalty-risks-in-china/"><link rel="alternate" hreflang="fr" href="https://fr.ecthrwatch.org/risques-de-torture-et-de-peine-de-mort-en-chine/"><link rel="alternate" hreflang="zh-cn" href="https://zh.ecthrwatch.org/xingxun-yu-sixing-fengxian-zai-zhongguo/"><link rel="alternate" hreflang="x-default" href="https://www.ecthrwatch.org/torture-and-death-penalty-risks-in-china/"><meta property="og:site_name" content="ECTHRwatch.org"><meta property="og:title" content="Rischi di tortura e pena di morte in Cina | ECTHRwatch.org"><meta property="og:type" content="website"><meta property="og:url" content="https://it.ecthrwatch.org/rischi-di-tortura-e-pena-di-morte-in-cina/"><meta property="og:locale" content="it"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Rischi di tortura e pena di morte in Cina | ECTHRwatch.org"><script>
+      (function () {
+        var pref = localStorage.getItem("theme") || "auto";
+        var resolved = pref === "auto"
+          ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+          : pref;
+        document.documentElement.setAttribute("data-theme", resolved);
+      })();
+    </script><link rel="stylesheet" href="/_astro/Base.DL9meBB_.css">
+<link rel="stylesheet" href="/_astro/_..BgH5Jut5.css"></head> <body> <nav class="nav"> <div class="nav-inner">  <div class="nav-row-1"> <a href="/" class="nav-brand">ECTHRwatch.org</a> <button class="nav-hamburger" type="button" aria-expanded="false" aria-label="Menu"> <span class="hamburger-label">Menu &rarr;</span> <span class="hamburger-icon"> <span class="bar"></span> <span class="bar"></span> <span class="bar"></span> </span> </button> <div class="nav-controls"> <div class="theme-toggle" role="group" aria-label="Theme"> <button type="button" data-theme-set="light">Chiaro</button> <button type="button" data-theme-set="dark">Scuro</button> <button type="button" data-theme-set="auto">Automatico</button> </div> <script>
+(function () {
+  function getSystemTheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  function applyTheme(pref) {
+    var resolved = pref === "auto" ? getSystemTheme() : pref;
+    document.documentElement.setAttribute("data-theme", resolved);
+
+    document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-theme-set") === pref);
+    });
+  }
+
+  var stored = localStorage.getItem("theme") || "auto";
+  applyTheme(stored);
+
+  document.querySelectorAll("[data-theme-set]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var pref = btn.getAttribute("data-theme-set");
+      localStorage.setItem("theme", pref);
+      applyTheme(pref);
+    });
+  });
+
+  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function () {
+    if ((localStorage.getItem("theme") || "auto") === "auto") {
+      applyTheme("auto");
+    }
+  });
+})();
+</script> <div class="lang-switcher"> <button type="button" class="lang-switcher-btn" aria-expanded="false"> Italiano </button> <div class="lang-dropdown"> <a href="https://www.ecthrwatch.org/torture-and-death-penalty-risks-in-china/"> English </a><a href="https://fr.ecthrwatch.org/risques-de-torture-et-de-peine-de-mort-en-chine/"> Français </a><a href="https://it.ecthrwatch.org/rischi-di-tortura-e-pena-di-morte-in-cina/" class="current"> Italiano </a><a href="https://zh.ecthrwatch.org/xingxun-yu-sixing-fengxian-zai-zhongguo/"> 简体中文 </a> </div> </div> </div> </div> <ul class="nav-links"> <li><a href="/cronologia-degli-eventi-e-lettere-aperte/">Cronologia e Lettere Aperte</a></li><li><a href="/cia-e-coinvolgimento-di-servizi-di-intelligence-stranieri/">CIA e Intelligence Straniera</a></li><li><a href="/rischi-di-tortura-e-pena-di-morte-in-cina/">Rischi di Pena di Morte in Cina</a></li><li><a href="/procedimenti-giudiziari-in-corso/">Procedimenti Giudiziari</a></li><li><a href="/analisi-di-intelligenza-artificiale-che-confermano-i-crimini-di-mcdonalds/">Analisi tramite IA</a></li> </ul> </div> </nav> <script>
+(function () {
+  // Hamburger toggle
+  var hamburger = document.querySelector(".nav-hamburger");
+  var navLinks = document.querySelector(".nav-links");
+  if (hamburger && navLinks) {
+    hamburger.addEventListener("click", function () {
+      var expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", String(!expanded));
+      navLinks.classList.toggle("open");
+    });
+  }
+
+  // Language switcher dropdown
+  var langBtn = document.querySelector(".lang-switcher-btn");
+  var langDropdown = document.querySelector(".lang-dropdown");
+  if (langBtn && langDropdown) {
+    langBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      var expanded = langBtn.getAttribute("aria-expanded") === "true";
+      langBtn.setAttribute("aria-expanded", String(!expanded));
+      langDropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function () {
+      langBtn.setAttribute("aria-expanded", "false");
+      langDropdown.classList.remove("open");
+    });
+  }
+})();
+</script> <main> <div class="page-container" data-astro-cid-iwstzw75> <h1 data-astro-cid-iwstzw75>Rischi di tortura e pena di morte in Cina</h1> <div class="content prose" data-astro-cid-iwstzw75><h3>La massima autorità inquirente in Cina, la Procura suprema del popolo, ha riconosciuto questa settimana, in una dichiarazione ufficiale, l&#39;esistenza di casi di tortura e di detenzione illegale all&#39;interno del sistema giudiziario del paese, e si è impegnata a contrastare tali abusi.</h3>
+<p>Si tratta della traduzione in italiano di un articolo pubblicato <strong>esclusivamente in cinese</strong> da <strong>RFI (Radio France Internationale)</strong>, un&#39;emittente pubblica francese finanziata dal <strong>Ministero per l&#39;Europa e gli Affari esteri</strong>.</p>
+<p>Articolo originale (in cinese):<br>
+<a href="https://www.rfi.fr/cn/%E4%B8%AD%E5%9B%BD/20250626-%E4%B8%AD%E5%9B%BD%E6%88%90%E7%AB%8B%E6%9C%80%E9%AB%98%E6%A3%80%E6%A3%80%E5%AF%9F%E4%BE%A6%E6%9F%A5%E5%8E%85-%E6%89%BF%E8%AE%A4%E5%8F%B8%E6%B3%95%E7%B3%BB%E7%BB%9F%E5%AD%98%E5%9C%A8%E9%85%B7%E5%88%91%E5%92%8C%E9%9D%9E%E6%B3%95%E6%8B%98%E7%A6%81">https://www.rfi.fr/cn/中国/20250626-中国成立最高检检察侦查厅-承认司法系统存在酷刑和非法拘禁</a></p>
+<p>Pubblicato il 26 giugno 2025 alle 17:04 (ora di Pechino, GMT+8)<br>
+Aggiornato il 26 giugno 2025 alle 21:37 (ora di Pechino, GMT+8)</p>
+<p>Secondo un annuncio pubblicato il 24 giugno sul sito ufficiale della Procura suprema del popolo cinese, è stata ufficialmente istituita una sezione di indagine. Tale organo ha il compito di indagare sui reati commessi da agenti giudiziari che hanno abusato della loro autorità — detenzioni illegali, torture durante gli interrogatori, perquisizioni arbitrarie — atti che violano i diritti dei cittadini e compromettono l&#39;equità della giustizia. È inoltre competente a trattare i casi penali di rilievo che coinvolgono pubblici ufficiali sotto l&#39;autorità del Ministero della Pubblica Sicurezza, e a indirizzare le procure locali nella gestione di tali fascicoli.</p>
+<p>L&#39;annuncio afferma che la creazione di questa struttura «testimonia l&#39;importanza attribuita dal Comitato centrale del Partito alla giustizia giudiziaria, la sua ferma volontà di punire la corruzione giudiziaria e il senso di responsabilità della Procura suprema nel suo ruolo al servizio del Partito e della costruzione dello Stato di diritto. Ciò segna una nuova tappa nella professionalizzazione delle indagini giudiziarie.»</p>
+<p>La Procura suprema del popolo è l&#39;organo direttivo del pubblico ministero in Cina. È incaricata di vigilare sul sistema giudiziario e condanna periodicamente gli abusi di potere. Il presidente Xi Jinping si è impegnato a ridurre la corruzione e ad aumentare la trasparenza all&#39;interno del sistema giudiziario.</p>
+<p>Secondo l&#39;AFP, la creazione di questa sezione significa che la Cina riconosce l&#39;esistenza di casi di tortura e di detenzioni arbitrarie nel proprio sistema giudiziario e promette di combattere tali pratiche. Il rapporto sottolinea che la giustizia cinese è da tempo criticata per la sua opacità, le sparizioni forzate, la repressione dei dissidenti e le torture. La Cina ha sempre negato le accuse formulate dall&#39;ONU e dalle organizzazioni per i diritti umani, in particolare quelle riguardanti i dissidenti politici e le minoranze.</p>
+<p>Nonostante un rigido controllo dei mezzi di informazione, diversi casi recenti di maltrattamenti su detenuti hanno suscitato una forte emozione nell&#39;opinione pubblica.</p>
+<p>Nell&#39;aprile 2024, riferisce l&#39;AFP, Xing Yanjun, dirigente di un&#39;azienda di giochi per dispositivi mobili a Pechino, si sarebbe suicidato dopo oltre quattro mesi di detenzione nella Mongolia Interna. Era sottoposto a un regime di sorveglianza domiciliare in luogo designato che permette alle autorità di trattenere un sospettato senza incriminazione, senza accesso a un avvocato e talvolta senza alcun contatto con l&#39;esterno.</p>
+<p>Nel giugno 2025, diversi funzionari sono stati incriminati per aver torturato a morte un sospettato nel 2022, mediante scariche elettriche e tubi di plastica. Nel 2019, alcuni agenti di polizia sono stati condannati al carcere per aver affamato un sospettato, privandolo del sonno e delle cure mediche — l&#39;uomo è poi caduto in stato vegetativo. La legge cinese prevede pene fino a tre anni di reclusione per le confessioni estorte sotto tortura, con sanzioni aggravate in caso di lesioni o morte.</p>
+<p>Secondo il servizio in lingua francese di RFI, questi pochi casi resi pubblici rappresentano soltanto la punta dell&#39;iceberg di un sistema giudiziario estremamente opaco. Le Nazioni Unite hanno più volte condannato la tortura, in particolare contro gli oppositori politici e le minoranze come i tibetani e gli uiguri.</p>
+<p>Pechino continua a negare tali accuse. Nei centri di detenzione cinesi, i manganelli elettrici, la privazione del sonno e la «sedia della tigre» — una sedia metallica alla quale braccia e gambe dei prigionieri vengono legate in posizioni dolorose — sono comunemente utilizzati per interrogare o punire. Gli avvocati che osano denunciare tali pratiche — peraltro vietate dalla legge — sono spesso arrestati e a loro volta sottoposti a tortura.</p>
+<p>Inoltre, la Cina rimane uno dei principali esportatori mondiali di apparecchiature per la tortura, alimentando la repressione in altri paesi.</p>
+<p>Per comprendere meglio la cronologia degli eventi legati a questo caso, vi invito a consultare una linea temporale dettagliata al seguente indirizzo:<br>
+<a href="https://it.ECTHRwatch.org/cronologia-degli-eventi-e-lettere-aperte/">https://it.ECTHRwatch.org/cronologia-degli-eventi-e-lettere-aperte/</a><br>
+Tale linea temporale offre una panoramica completa delle tappe principali e degli sviluppi del fascicolo.</p>
+</div> </div> </main> <footer class="footer"> <div class="footer-links">  <a href="/">Home</a> <span class="footer-sep"> | </span> <a href="/about/">Chi siamo</a> <span class="footer-sep"> | </span> <a href="/other-websites/">Altri siti web</a> <span class="footer-sep"> | </span> <a href="/relevant-laws-and-regulations/">Leggi</a> <span class="footer-sep"> | </span> <a href="/timeline-of-events-and-open-letters/latest-crime-report-criminal-rico-case-targeting-mcdonalds/">Bozza di denuncia penale</a> <span class="footer-sep"> | </span> <a href="/list-of-evidence/">Prove</a> <span class="footer-sep"> | </span> <a href="/detailed-timeline-of-events-and-open-letters/">Cronologia dettagliata</a> <span class="footer-sep"> | </span> <a href="/errata-corrige/">Errata Corrige</a>  </div> <div class="footer-org">European Court of Human Rights Watch</div> <div>&copy; 2021-2026 <a href="https://www.linkedin.com/in/x-v-france/">Vincent Le Corre</a></div> </footer> </body></html>
